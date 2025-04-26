@@ -1,31 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portuguese Barber Shop</title>
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1537/1537764.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <meta name="description" content="Portuguese Barber Shop: quality haircuts, fades, and beard trims in Winnipeg.">
   <meta property="og:title" content="Portuguese Barber Shop">
   <meta property="og:description" content="Quality haircuts, fades, and beard trims with a family tradition since 1990.">
   <link rel="stylesheet" href="style.css">
-
-  <!-- Hero tweaks: background panel & blue accent text -->
-  <style>
-    .hero-content {
-      background: rgba(255, 255, 255, 0.103);
-      padding: 2rem;
-      border-radius: 8px;
-      display: inline-block;
-    }
-    /* Make hero heading & paragraph white */
-    .hero-content h2,
-    .hero-content p {
-      color: #ffffff;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    }
-  </style>  
 </head>
 <body>
   <header>
@@ -39,11 +22,10 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" role="img" aria-label="Barbershop tools background">
     <div class="hero-content">
       <h2>Your Father-and-Son Tradition Since 1990</h2>
       <p>Quality cuts, fades, and beard trims in the heart of Winnipeg.</p>
-      <!-- CTA removed -->
     </div>
   </section>
 
@@ -56,35 +38,46 @@
     </div>
   </main>
 
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="testimonial"><p>"Best haircut experience I've ever had! The attention to detail is fantastic."</p><cite>- Alex R.</cite></div>
+      <div class="testimonial"><p>"Friendly service and great prices. I'll definitely be back every month."</p><cite>- Sam P.</cite></div>
+      <div class="testimonial"><p>"Love the father-and-son vibe. Makes the shop feel like family."</p><cite>- Casey L.</cite></div>
+    </div>
+  </section>
+
   <section class="contact">
     <div class="container">
-      <h2 class="section-title">Find Us</h2>
+      <h2 class="section-title">Find Us & Get In Touch</h2>
       <div class="contact-content">
-        <div class="contact-info">
-          <p><strong>Address:</strong><br>38 Kate St, Winnipeg, MB R3A 1J8</p>
-          <p><strong>Hours:</strong><br>Tue–Sat 9am–6pm</p>
-          <p><strong>Phone:</strong><br>(204) 123-4567</p>
+        <div class="contact-info"><p><strong>Address:</strong><br>38 Kate St, Winnipeg, MB R3A 1J8</p><p><strong>Hours:</strong><br>Tue–Sat 9am–6pm</p><p><strong>Phone:</strong><br>(204) 123-4567</p></div>
+        <iframe class="map" src="https://maps.google.com/maps?q=38%20Kate%20St%20Winnipeg&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
+        <div class="contact-form">
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
-        <iframe
-          class="map"
-          src="https://maps.google.com/maps?q=38%20Kate%20St%20Winnipeg&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
       </div>
     </div>
   </section>
 
   <footer>
-    <p><strong>Address:</strong> 38 Kate St, Winnipeg, MB R3A 1J8</p>
-    <p><strong>Hours:</strong> Tue–Sat 9am–6pm</p>
-    <p><strong>Phone:</strong> (204) 123-4567</p>
+    <p>© 2025 Portuguese Barber Shop</p>
+    <p>Built by Jeet Vaidya</p>
   </footer>
 
   <script>
-    document
-      .getElementById('menu-toggle')
-      .addEventListener('click', () => document.getElementById('navbar').classList.toggle('active'));
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      toggle.classList.toggle('open');
+    });
   </script>
 </body>
 </html>
