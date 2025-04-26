@@ -10,11 +10,19 @@
   <meta property="og:title" content="Portuguese Barber Shop">
   <meta property="og:description" content="Quality haircuts, fades, and beard trims with a family tradition since 1990.">
   <link rel="stylesheet" href="style.css">
-  <!-- Override hero text color -->
+
+  <!-- Hero tweaks: background panel & blue accent text -->
   <style>
+    .hero-content {
+      background: rgba(255,255,255,0.15);
+      padding: 2rem;
+      border-radius: 8px;
+      display: inline-block;
+    }
     .hero-content h2,
     .hero-content p {
       color: var(--accent);
+      text-shadow: 0 1px 3px rgba(0,0,0,0.6);
     }
   </style>
 </head>
@@ -34,7 +42,7 @@
     <div class="hero-content">
       <h2>Your Father-and-Son Tradition Since 1990</h2>
       <p>Quality cuts, fades, and beard trims in the heart of Winnipeg.</p>
-      <a href="booking.html">Book Now</a>
+      <!-- CTA removed -->
     </div>
   </section>
 
