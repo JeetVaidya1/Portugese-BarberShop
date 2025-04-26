@@ -21,16 +21,16 @@
       <a href="booking.html">Book Now</a>
     </nav>
   </header>
-
   <section class="hero">
-    <div class="container">
+    <div class="hero-content">
       <h2>Your Father-and-Son Tradition Since 1990</h2>
       <p>Quality cuts, fades, and beard trims in the heart of Winnipeg.</p>
+      <a href="booking.html">Book Now</a>
     </div>
   </section>
-
-  <div class="container">
-    <section class="services">
+  <main class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
       <div class="card">
         <h3>Haircut</h3>
         <p>$13 CAD</p>
@@ -43,24 +43,17 @@
         <h3>Combo Pack</h3>
         <p>Haircut + Beard Trim $18 CAD</p>
       </div>
-    </section>
-  </div>
-
-  <footer>
-    <div class="container">
-      <p><strong>Address:</strong> 38 Kate St, Winnipeg, MB R3A 1J8</p>
-      <p><strong>Hours:</strong> Tue–Sat 9am–6pm</p>
-      <p><strong>Phone:</strong> (204) 123-4567</p>
-      <iframe src="https://maps.google.com/maps?q=38%20Kate%20St%20Winnipeg&t=&z=13&ie=UTF8&iwloc=&output=embed" height="200"></iframe>
     </div>
+  </main>
+  <footer>
+    <p><strong>Address:</strong> 38 Kate St, Winnipeg, MB R3A 1J8</p>
+    <p><strong>Hours:</strong> Tue–Sat 9am–6pm</p>
+    <p><strong>Phone:</strong> (204) 123-4567</p>
   </footer>
-
   <script>
     const toggle = document.getElementById('menu-toggle');
     const nav = document.getElementById('navbar');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
+    toggle.addEventListener('click', () => nav.classList.toggle('active'));
   </script>
 </body>
 </html>

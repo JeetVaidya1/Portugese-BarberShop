@@ -19,29 +19,22 @@
       <a href="booking.html">Book Now</a>
     </nav>
   </header>
-
-  <div class="container">
-    <section class="gallery">
-      <img src="https://via.placeholder.com/200" alt="Haircut sample">
-      <img src="https://via.placeholder.com/200" alt="Fade sample">
-      <img src="https://via.placeholder.com/200" alt="Beard trim sample">
-      <img src="https://via.placeholder.com/200" alt="Shop interior">
-    </section>
-  </div>
-
-  <footer>
-    <div class="container">
-      <p><strong>Address:</strong> 38 Kate St, Winnipeg, MB R3A 1J8</p>
-      <p><strong>Phone:</strong> (204) 123-4567</p>
-      <iframe src="https://maps.google.com/maps?q=38%20Kate%20St%20Winnipeg&t=&z=13&ie=UTF8&iwloc=&output=embed" height="200"></iframe>
+  <main class="container">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x400/?modern-barber,cut" alt="Haircut sample">
+      <img src="https://source.unsplash.com/400x400/?barber-fade" alt="Fade sample">
+      <img src="https://source.unsplash.com/400x400/?beard-trim" alt="Beard trim sample">
+      <img src="https://source.unsplash.com/400x400/?barbershop-interior" alt="Shop interior">
     </div>
+  </main>
+  <footer>
+    <p><strong>Address:</strong> 38 Kate St, Winnipeg, MB R3A 1J8</p>
+    <p><strong>Phone:</strong> (204) 123-4567</p>
   </footer>
-
   <script>
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('navbar');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('navbar').classList.toggle('active');
     });
   </script>
 </body>
