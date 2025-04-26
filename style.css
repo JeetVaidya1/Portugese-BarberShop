@@ -7,16 +7,16 @@
   --text: #1e3a8a;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--text);
-  background: var(--light);
+body { 
+  font-family: 'Roboto', sans-serif; 
+  color: var(--text); 
+  background: var(--light); 
 }
-header {
-  background: var(--primary);
-  padding: 1rem 2rem;
-  position: sticky; top: 0; z-index: 100;
-  display: flex; align-items: center;
+header { 
+  background: var(--primary); 
+  padding: 1rem 2rem; 
+  position: sticky; top: 0; z-index: 100; 
+  display: flex; align-items: center; 
 }
 .logo { width: 40px; margin-right: 0.5rem; }
 header h1 { color: #fff; font-size: 1.75rem; }
@@ -24,13 +24,14 @@ nav { margin-left: auto; display: flex; gap: 1.5rem; }
 nav a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s; }
 nav a:hover { color: var(--accent); }
 .menu-toggle { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; }
-.hero {
-  height: 60vh;
-  background: url('https://source.unsplash.com/weekly?barbershop,blue') center/cover no-repeat;
-  display: flex; align-items: center; justify-content: center; position: relative;
+.hero { 
+  height: 60vh; 
+  background: url('https://source.unsplash.com/1600x900/?barbershop,blue') center/cover no-repeat; 
+  background-color: var(--primary-dark);
+  display: flex; align-items: center; justify-content: center; position: relative; 
 }
-.hero::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.5); }
-.hero-content { position: relative; text-align: center; color: #fff; }
+.hero::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.3); }
+.hero-content { position: relative; text-align: center; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.7); }
 .hero h2 { font-size: 2.75rem; margin-bottom: 0.5rem; }
 .hero p { font-size: 1.1rem; margin-bottom: 1rem; }
 .hero a { padding: 0.75rem 1.5rem; background: var(--accent); color: #fff; text-decoration: none; border-radius: 4px; font-weight: 500; transition: background 0.3s; }
