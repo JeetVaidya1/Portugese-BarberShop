@@ -19,27 +19,7 @@ body {
   background: #ffffff;          /* solid white page background */
 }
 
-/* …your existing header/nav styles… */
 
-.hero {
-  height: 60vh;
-  background-color: var(--primary-dark);     /* dark‐blue fallback */
-  background-image: url('https://source.unsplash.com/1600x900/?barbershop,blue');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.3);
-}
 
 header {
   background: var(--primary);
@@ -123,7 +103,7 @@ nav a.active::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.3);
+  background-color: var(--primary-dark);
 }
 
 .hero-content {
