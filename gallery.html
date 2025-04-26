@@ -2,26 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gallery - Portuguese Barber Shop</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Gallery of hairstyles and beard trims at Portuguese Barber Shop.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Gallery</h1>
-    <nav>
+    <h1>Portuguese Barber Shop</h1>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <nav id="navbar">
       <a href="index.html">Home</a>
       <a href="gallery.html">Gallery</a>
       <a href="booking.html">Book Now</a>
     </nav>
   </header>
+
   <div class="container">
-    <div class="gallery">
+    <section class="gallery">
       <img src="https://via.placeholder.com/200" alt="Haircut sample">
       <img src="https://via.placeholder.com/200" alt="Fade sample">
       <img src="https://via.placeholder.com/200" alt="Beard trim sample">
       <img src="https://via.placeholder.com/200" alt="Shop interior">
-    </div>
+    </section>
   </div>
+
+  <footer>
+    <div class="container">
+      <p><strong>Address:</strong> 38 Kate St, Winnipeg, MB R3A 1J8</p>
+      <p><strong>Phone:</strong> (204) 123-4567</p>
+      <iframe src="https://maps.google.com/maps?q=38%20Kate%20St%20Winnipeg&t=&z=13&ie=UTF8&iwloc=&output=embed" height="200"></iframe>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
